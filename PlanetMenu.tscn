@@ -1,0 +1,521 @@
+[gd_scene load_steps=58 format=2]
+
+[ext_resource path="res://Resources/Images/SpriteSheets/World1.png" type="Texture" id=1]
+[ext_resource path="res://Resources/Images/lifebar_bg.png" type="Texture" id=2]
+[ext_resource path="res://Resources/Images/lifebar_fill.png" type="Texture" id=3]
+[ext_resource path="res://PlanetMenu.gd" type="Script" id=4]
+[ext_resource path="res://Resources/Fonts/PixelCase-E5dr.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 98, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 196, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 294, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 392, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 490, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 588, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 686, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 784, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 882, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 980, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1078, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1176, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1274, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1372, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1470, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1568, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1666, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1764, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1862, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1960, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 2058, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 2156, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 2254, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 2352, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 2450, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 2548, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 2646, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 2744, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 2842, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 2940, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 3038, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 3136, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=34]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 3234, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=35]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 3332, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=36]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 3430, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=37]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 3528, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=38]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 3626, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=39]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 3724, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=40]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 3822, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=41]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 3920, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=42]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 4018, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=43]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 4116, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=44]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 4214, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=45]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 4312, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=46]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 4410, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=47]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 4508, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=48]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 4606, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=49]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 4704, 0, 98, 98 )
+
+[sub_resource type="AtlasTexture" id=50]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 4802, 0, 98, 98 )
+
+[sub_resource type="SpriteFrames" id=51]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ) ],
+"loop": true,
+"name": "Spin",
+"speed": 6.0
+} ]
+
+[sub_resource type="DynamicFont" id=52]
+size = 40
+font_data = ExtResource( 5 )
+
+[node name="PlanetMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 1260.0
+margin_bottom = 700.0
+custom_constants/separation = 11
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Money" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+margin_right = 100.0
+margin_bottom = 680.0
+custom_constants/separation = 30
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HBoxContainer/Money"]
+margin_right = 100.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 100, 100 )
+custom_constants/margin_right = 20
+custom_constants/margin_top = 20
+custom_constants/margin_left = 20
+custom_constants/margin_bottom = 20
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="MarginContainer/HBoxContainer/Money/MarginContainer"]
+position = Vector2( 54, 54 )
+frames = SubResource( 51 )
+animation = "Spin"
+frame = 20
+playing = true
+
+[node name="Stock Market" type="Button" parent="MarginContainer/HBoxContainer/Money"]
+margin_top = 130.0
+margin_right = 100.0
+margin_bottom = 216.0
+size_flags_vertical = 3
+text = "Stock Market"
+
+[node name="Money" type="Button" parent="MarginContainer/HBoxContainer/Money"]
+margin_top = 246.0
+margin_right = 100.0
+margin_bottom = 332.0
+size_flags_vertical = 3
+text = "Money"
+
+[node name="Bank" type="Button" parent="MarginContainer/HBoxContainer/Money"]
+margin_top = 362.0
+margin_right = 100.0
+margin_bottom = 448.0
+size_flags_vertical = 3
+text = "Bank"
+
+[node name="Loan" type="Button" parent="MarginContainer/HBoxContainer/Money"]
+margin_top = 478.0
+margin_right = 100.0
+margin_bottom = 564.0
+size_flags_vertical = 3
+text = "Loan"
+
+[node name="EvilLoan" type="Button" parent="MarginContainer/HBoxContainer/Money"]
+margin_top = 594.0
+margin_right = 100.0
+margin_bottom = 680.0
+size_flags_vertical = 3
+text = "Evil Loan"
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/HBoxContainer"]
+margin_left = 111.0
+margin_right = 1179.0
+margin_bottom = 680.0
+size_flags_horizontal = 3
+custom_constants/margin_right = 20
+custom_constants/margin_left = 20
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Actions" type="VBoxContainer" parent="MarginContainer/HBoxContainer/MarginContainer2"]
+margin_left = 20.0
+margin_right = 1048.0
+margin_bottom = 680.0
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.01
+custom_constants/separation = 36
+
+[node name="CompanyName" type="Label" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions"]
+margin_right = 1028.0
+margin_bottom = 46.0
+custom_fonts/font = SubResource( 52 )
+text = "Company Name Inc."
+align = 1
+valign = 1
+autowrap = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions"]
+margin_top = 82.0
+margin_right = 1028.0
+margin_bottom = 191.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.3
+custom_constants/separation = 20
+
+[node name="MarketPlace" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions/HBoxContainer"]
+margin_right = 329.0
+margin_bottom = 109.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Market Place"
+
+[node name="Warehouse" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions/HBoxContainer"]
+margin_left = 349.0
+margin_right = 678.0
+margin_bottom = 109.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Warehouse"
+
+[node name="Supply" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions/HBoxContainer"]
+margin_left = 698.0
+margin_right = 1028.0
+margin_bottom = 109.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Supply"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions"]
+margin_top = 227.0
+margin_right = 1028.0
+margin_bottom = 680.0
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.24
+custom_constants/separation = 15
+
+[node name="Passengers" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions/VBoxContainer2"]
+margin_right = 1028.0
+margin_bottom = 51.0
+size_flags_vertical = 3
+text = "Passengers"
+
+[node name="Advertise" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions/VBoxContainer2"]
+margin_top = 66.0
+margin_right = 1028.0
+margin_bottom = 118.0
+size_flags_vertical = 3
+text = "Advertise"
+
+[node name="Crew Wages" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions/VBoxContainer2"]
+margin_top = 133.0
+margin_right = 1028.0
+margin_bottom = 185.0
+size_flags_vertical = 3
+text = "Crew Wages"
+
+[node name="Taxes" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions/VBoxContainer2"]
+margin_top = 200.0
+margin_right = 1028.0
+margin_bottom = 252.0
+size_flags_vertical = 3
+text = "Taxes"
+
+[node name="Insurance" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions/VBoxContainer2"]
+margin_top = 267.0
+margin_right = 1028.0
+margin_bottom = 319.0
+size_flags_vertical = 3
+text = "Insurance"
+
+[node name="Explore Planet" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions/VBoxContainer2"]
+margin_top = 334.0
+margin_right = 1028.0
+margin_bottom = 386.0
+size_flags_vertical = 3
+text = "Explore Planet"
+
+[node name="Menu" type="Button" parent="MarginContainer/HBoxContainer/MarginContainer2/Actions/VBoxContainer2"]
+margin_top = 401.0
+margin_right = 1028.0
+margin_bottom = 453.0
+size_flags_vertical = 3
+text = "Menu"
+
+[node name="Fuel" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+margin_left = 1190.0
+margin_right = 1240.0
+margin_bottom = 680.0
+size_flags_stretch_ratio = 0.2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/Fuel"]
+margin_right = 50.0
+margin_bottom = 680.0
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/Fuel/VBoxContainer"]
+margin_right = 50.0
+margin_bottom = 14.0
+text = "Fuel"
+align = 1
+valign = 1
+
+[node name="Button" type="Button" parent="MarginContainer/HBoxContainer/Fuel/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 18.0
+margin_right = 50.0
+margin_bottom = 680.0
+rect_min_size = Vector2( 50, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureProgress" type="TextureProgress" parent="MarginContainer/HBoxContainer/Fuel/VBoxContainer/Button"]
+anchor_top = -0.00151057
+anchor_right = 1.0
+anchor_bottom = 0.998489
+rect_min_size = Vector2( 50, 600 )
+size_flags_vertical = 3
+value = 50.0
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 3 )
+fill_mode = 3
+nine_patch_stretch = true
+stretch_margin_left = 25
+stretch_margin_top = 25
+stretch_margin_right = 25
+stretch_margin_bottom = 25
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Fuel/VBoxContainer/Button" to="." method="_on_Button_pressed"]
